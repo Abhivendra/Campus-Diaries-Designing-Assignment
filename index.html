@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title>Designing Assignment</title>
+		<meta charset="utf-8"/>
 		<link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 	</head>
 	<body>
@@ -9,7 +10,7 @@
 		  <div class="container">
 		    <div class="navbar-header">
 		      <a class="navbar-brand" href="#" >
-		      	<img src="https://dkzstslcvgwbc.cloudfront.net/sites/all/themes/campus_diaries/campus_diaries.png" alt="Home">
+		      	<img  src="https://dkzstslcvgwbc.cloudfront.net/sites/all/themes/campus_diaries/campus_diaries.png" alt="Home">
 		      </a>
 		    </div>
 		    <div>
@@ -26,7 +27,7 @@
 			<div class="row" style="min-height:1000px">
 				<div class="col-md-8">
 					<div class="img-wrapper">
-						<img src="http://dkzstslcvgwbc.cloudfront.net/sites/all/themes/campus_diaries/images/front/1.jpg" alt="" style="max-width:500px;">
+						<img id="random-image" src="http://dkzstslcvgwbc.cloudfront.net/sites/all/themes/campus_diaries/images/front/1.jpg" alt="" style="max-width:500px;">
 					</div>
 				</div>
 				<div class="col-md-4" style="width:300px">
@@ -57,7 +58,7 @@
 		<script src="bower_components/jquery/dist/jquery.js"></script>
 		<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 		<script>
-		//Function for checking scroll end events
+			//Function for checking scroll end events
 			$.fn.scrollEnd = function(callback, timeout) {          
 			  $(this).scroll(function(){
 			    var $this = $(this);
@@ -67,7 +68,6 @@
 			    $this.data('scrollTimeout', setTimeout(callback,timeout));
 			  });
 			};
-
 			//calling scroll end event i.e. reapperence of nav bar
 			$(window).scrollEnd(function(){
 			  $('#header-bar').fadeIn();
@@ -87,6 +87,13 @@
 			   }
 			   lastScrollTop = stopingPoint;
 			});
+
+			// Random image generator
+			var imgStartPath="http://dkzstslcvgwbc.cloudfront.net/sites/all/themes/campus_diaries/images/front/";
+			var randomNumber=Math.floor((Math.random() * 10) + 1);
+			var imageRandomPath=imgStartPath+randomNumber+'.jpg';
+			console.log('imageRandomPath:' , imageRandomPath);
+			$("#random-image").attr("src",imageRandomPath);
 		</script>
 	</body>
 </html>
