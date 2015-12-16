@@ -4,14 +4,14 @@ This is a sample project with following requirements:
  1. Create a responsive page
  2. 12 column grid (60px width, 20px gutter) {Use any css framework}
  3. Header Section
- - Place at top of the Page
+- Place at top of the Page
 - Add a Logo to the left of header
 - Functionality  
-- - Not visible when a Page is scrolled up
-- - - Visible again, when the scrolling stops
-- - Visible when the Page is scrolled down
+- Not visible when a Page is scrolled up
+-Visible again, when the scrolling stops
+-Visible when the Page is scrolled down
 - Set height to 60px
-4. Content Section
+ 4. Content Section
 - Two column Layout
 - - Main Content 
 - - - Had container <div class=”img-wrapper”>
