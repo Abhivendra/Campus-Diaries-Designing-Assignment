@@ -43,9 +43,9 @@ This is a sample project with following requirements:
 ## Tech
 * [Twitter Bootstrap] - great UI boilerplate for modern web apps
 * [jQuery] - For minimising javascript
-* [HTML5] [df1] - For MarkUp
-* [CSS3] [df1] - For Styling
-* [Bower] [df1] - For Frontend Package Management
+* [HTML5] - For MarkUp
+* [CSS3]- For Styling
+* [Bower] - For Frontend Package Management
 
 ### Installation
 > Go To My Repo [Abhivendra]
