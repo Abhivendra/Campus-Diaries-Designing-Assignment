@@ -6,94 +6,60 @@
 		<link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 	</head>
 	<body>
-		<nav id="header-bar" class="navbar navbar-default navbar-fixed-top">
-		  <div class="container">
-		    <div class="navbar-header">
-		      <a class="navbar-brand" href="#" >
-		      	<img  src="https://dkzstslcvgwbc.cloudfront.net/sites/all/themes/campus_diaries/campus_diaries.png" alt="Home">
-		      </a>
-		    </div>
-		    <div>
-		      <ul class="nav navbar-nav">
-		        <li class="active"><a href="#">Home</a></li>
-		        <li><a href="#">Page 1</a></li>
-		        <li><a href="#">Page 2</a></li>
-		        <li><a href="#">Page 3</a></li>
-		      </ul>
-		    </div>
-		  </div>
+		<nav id="header-bar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="navbar-inner"> <!--changes made here-->
+			  <div class="container">
+			    <div class="navbar-header">
+		      	<a class="navbar-brand" href="#" >
+		      		<img  src="https://dkzstslcvgwbc.cloudfront.net/sites/all/themes/campus_diaries/campus_diaries.png" alt="Home">
+		      	</a>
+		      	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			        <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          	</button>
+		    	</div>
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav navbar-right">
+			      	<li class="active"><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+			      </ul>
+			    </div>
+			  </div>
+			</div>
 		</nav>
 		<div class="container" style="padding-top:60px;">
 			<div class="row" style="min-height:1000px">
-				<div class="col-md-8">
-					<div class="img-wrapper">
-						<img id="random-image" src="http://dkzstslcvgwbc.cloudfront.net/sites/all/themes/campus_diaries/images/front/1.jpg" alt="" style="max-width:500px;">
+				<div class="image-box-wraper row" style="border-style: solid;border-color: rgb(201, 204, 199);border-width: thin;">
+					<div class="col-md-6" style="padding:0px;">
+						<div class="img-wrapper">
+							<img class="img-responsive" id="random-image" src="" alt="" >
+						</div>
 					</div>
-				</div>
-				<div class="col-md-4" style="width:300px">
-					<h1>fuck</h1>
+					<div class="col-md-6" style="width:300px">
+						<h1>Image Description</h1>
+						<p>This Is Image Description</p>
+					</div>
 				</div>
 			</div>
 		</div>
-		<nav class="navbar navbar-inverse navbar-fixed-bottom">
+		<nav id="bottom-fixed-strip" class="navbar navbar-inverse navbar-fixed-bottom">
 		  <div class="container-fluid">
 		    <div class="navbar-header">
-		      <a class="navbar-brand" href="#">WebSiteName</a>
-		    </div>
-		    <div>
-		      <ul class="nav navbar-nav">
-		        <li class="active"><a href="#">Home</a></li>
-		        <li><a href="#">Page 1</a></li>
-		        <li><a href="#">Page 2</a></li>
-		        <li><a href="#">Page 3</a></li>
-		      </ul>
+		      <a class="navbar-brand" href="#">This is bottom nav bar</a>
 		    </div>
 		  </div>
 		</nav>
-		<div class="footer" style="background:#DDD;padding-top:5px;height:120px">
-			<div class="container" style="text-align:center;height:50px;font-size:.9em;padding:15px;">
-				This is footer-by abhi
+		<div id="footer" style="background:#DDD;padding-top:5px;height:120px">
+			<div class="container" style="text-align:center;padding:15px;">
+				This is footer
 			</div>
 		</div>
 		<script src="bower_components/jquery/dist/jquery.js"></script>
 		<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-		<script>
-			//Function for checking scroll end events
-			$.fn.scrollEnd = function(callback, timeout) {          
-			  $(this).scroll(function(){
-			    var $this = $(this);
-			    if ($this.data('scrollTimeout')) {
-			      clearTimeout($this.data('scrollTimeout'));
-			    }
-			    $this.data('scrollTimeout', setTimeout(callback,timeout));
-			  });
-			};
-			//calling scroll end event i.e. reapperence of nav bar
-			$(window).scrollEnd(function(){
-			  $('#header-bar').fadeIn();
-			}, 500);// I am using .5 seconds for reapperence It can be 
-
-			//function for tracking scroll up and scroll down events
-			var lastScrollTop = 0;
-			$(window).scroll(function(event){
-			   var stopingPoint = $(this).scrollTop();
-			   if (stopingPoint > lastScrollTop){
-			       // downscroll code
-			       // do nothing. Because I know nothing:P I am John Snow.
-			   }
-			   else {
-			      // upscroll code
-			      $('#header-bar').fadeOut();
-			   }
-			   lastScrollTop = stopingPoint;
-			});
-
-			// Random image generator
-			var imgStartPath="http://dkzstslcvgwbc.cloudfront.net/sites/all/themes/campus_diaries/images/front/";
-			var randomNumber=Math.floor((Math.random() * 10) + 1);
-			var imageRandomPath=imgStartPath+randomNumber+'.jpg';
-			console.log('imageRandomPath:' , imageRandomPath);
-			$("#random-image").attr("src",imageRandomPath);
-		</script>
+		<script src="js/script.js"></script>
 	</body>
 </html>
