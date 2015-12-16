@@ -1,5 +1,5 @@
 # Campus Diaries Designing Assignment
-> This is a sample project with following requirements:
+This is a sample project with following requirements:
 ### Task Description
  1. Create a responsive page
 2. 12 column grid (60px width, 20px gutter) {Use any css framework}
