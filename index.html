@@ -4,6 +4,8 @@
 		<title>Designing Assignment</title>
 		<meta charset="utf-8"/>
 		<link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+		<!-- Main Css File-->
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
 	</head>
 	<body>
 		<nav id="header-bar" class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -11,7 +13,7 @@
 			  <div class="container">
 			    <div class="navbar-header">
 		      	<a class="navbar-brand" href="#" >
-		      		<img  src="https://dkzstslcvgwbc.cloudfront.net/sites/all/themes/campus_diaries/campus_diaries.png" alt="Home">
+		      		<img  src="" alt="Home">
 		      	</a>
 		      	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 			        <span class="sr-only">Toggle navigation</span>
@@ -33,7 +35,7 @@
 		</nav>
 		<div class="container" style="padding-top:60px;">
 			<div class="row" style="min-height:1000px">
-				<div class="image-box-wraper row" style="border-style: solid;border-color: rgb(201, 204, 199);border-width: thin;">
+				<div class="image-box-wraper row">
 					<div class="col-md-6" style="padding:0px;">
 						<div class="img-wrapper">
 							<img class="img-responsive" id="random-image" src="" alt="" >
@@ -46,20 +48,21 @@
 				</div>
 			</div>
 		</div>
-		<nav id="bottom-fixed-strip" class="navbar navbar-inverse navbar-fixed-bottom">
+		<nav id="bottom-fixed-strip" class="navbar navbar-default navbar-fixed-bottom" style="background:rgb(228, 228, 228);">
 		  <div class="container-fluid">
 		    <div class="navbar-header">
-		      <a class="navbar-brand" href="#">This is bottom nav bar</a>
+		      <a class="navbar-brand" href="#">This is bottom fixed strip. Position changes to relative when hits the footer.</a>
 		    </div>
 		  </div>
 		</nav>
-		<div id="footer" style="background:#DDD;padding-top:5px;height:120px">
-			<div class="container" style="text-align:center;padding:15px;">
-				This is footer
+		<div id="footer">
+			<div class="container">
+				This is footer. Submited By:Abhivendra
 			</div>
 		</div>
 		<script src="bower_components/jquery/dist/jquery.js"></script>
 		<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+		<!--Main Script File-->
 		<script src="js/script.js"></script>
 	</body>
 </html>

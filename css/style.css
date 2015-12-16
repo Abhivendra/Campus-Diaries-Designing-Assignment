@@ -1,0 +1,18 @@
+.navbar-default {
+    	border-color: #AA2121;
+		}
+		.image-box-wraper{
+			border-style: solid;
+			border-color: rgb(201, 204, 199);
+			border-width: thin;
+		}
+		#footer{
+			background:#DDD;
+			padding-top:5px;
+			height:120px;
+			border: solid #D4CDCD 2px;
+		}
+		#footer>.container{
+			text-align:center;
+			padding:15px;
+		}
