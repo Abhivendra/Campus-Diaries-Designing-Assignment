@@ -13,22 +13,22 @@ This is a sample project with following requirements:
 - Set height to 60px
  4. Content Section
 - Two column Layout
-- - Main Content 
-- - - Had container <div class=”img-wrapper”>
-- - - - Always at the center of the screen
-- - - - Contains <img>
-- - - - - href : http://dkzstslcvgwbc.cloudfront.net/sites/all/themes/campus_diaries/images/front/<number>.jpg
- - - - - - Randomise <number> from 1 to 10, when page load. This will show different images whenever the page is refreshed.
-- - - - set max width to 500px
-- - Sidebar with width 300px
- - Set min height of content as 1000px
-5.  Sticky Bar
+- Main Content 
+- Had container <div class=”img-wrapper”>
+- Always at the center of the screen
+- Contains <img>
+- href : http://dkzstslcvgwbc.cloudfront.net/sites/all/themes/campus_diaries/images/front/<number>.jpg
+- Randomise <number> from 1 to 10, when page load. This will show different images whenever the page is refreshed.
+- set max width to 500px
+- Sidebar with width 300px
+- Set min height of content as 1000px
+ 5.  Sticky Bar
 - Place above Footer
 - Functionality
-- - Sticks at the bottom of screen when footer is not visible on viewport
-- - Sits just above the footer, when footer is visible on viewport
-6.  Footer Section
- - At the bottom of the Page
+- Sticks at the bottom of screen when footer is not visible on viewport
+- Sits just above the footer, when footer is visible on viewport
+ 6.  Footer Section
+- At the bottom of the Page
 - Set height to 120px
 
 
