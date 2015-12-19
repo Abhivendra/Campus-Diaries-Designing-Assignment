@@ -27,9 +27,11 @@
 			  var scrollTop = $(window).scrollTop();
     		var footerHeight=$('#footer').height();
     		// var footerPosition =Math.round($('#footer').offset().top);
-    		// console.log('$(document).height() ' , $(document).height()-footerHeight);
-    		// console.log('$(window).height()' , scrollTop+$(window).height());
-    		var space = $(document).height()-footerHeight-scrollTop-$(window).height();
+    		// console.log('$(document).height() ' , $(document).height());
+    		// console.log('$(window).height()+scrollTop' , $(window).height()+scrollTop);
+    		// console.log('scrollTop' , scrollTop);
+    		var space = 1120+$('#bottom-fixed-strip').height()-footerHeight-scrollTop-$(window).height();
+    		//not using document height beacuseit changes after changing position to relative
     		if(space<0){
     			$('#bottom-fixed-strip').stop().css({'position':'relative'});
     		}
@@ -41,11 +43,11 @@
 	    $(window).scrollEnd(function(){
 				$('#header-bar').fadeIn();
 			}, 200);// I am using .2 seconds for reapperence It can be
-			 
+
 			// Random image generator
 			//comment out following function to randomise image
 			// var randomImageFun=function(){
-				var imgStartPath="http://dkzstslcvgwbc.cloudfront.net/sites/all/themes/campus_diaries/images/front/";
+				var imgStartPath="img/";
 				var randomNumber=Math.floor((Math.random() * 10) + 1);
 				var imageRandomPath=imgStartPath+randomNumber+'.jpg';
 				// console.log('imageRandomPath:' , imageRandomPath);
