@@ -48,13 +48,11 @@ This is a sample project with following requirements:
 * [Bower] - For Frontend Package Management
 
 ### Installation
-> Go To My Repo [Abhivendra]
-```sh
-$ git clone Campus-Diaries-Designing-Assignment
-```
+> Go To My Github account.[@Abhivendra]
+> Download code from repo [https://github.com/Abhivendra/Campus-Diaries-Designing-Assignment]
 ### Run
-1. Clone Repo
-2. Open index.html with the help of any browser
+1. UnZip downloaded Code
+2. Run index.html with the help of any browser
 
 License
 ----
