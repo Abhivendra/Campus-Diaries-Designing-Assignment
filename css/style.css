@@ -49,3 +49,43 @@
 				float: none;
 			}
 		}
+		@media (max-width: 800px) {
+			#sidebar{
+				margin-top: 45%;
+				max-width: 300px;
+				align-content: center;
+				left: 25%;
+				position: absolute;
+				float: none;
+			}
+		}
+		@media (max-width: 650px) {
+			#sidebar{
+				margin-top: 47%;
+				max-width: 300px;
+				align-content: center;
+				left: 25%;
+				position: absolute;
+				float: none;
+			}
+		}
+		@media (max-width: 500px) {
+			#sidebar{
+				margin-top: 50%;
+				max-width: 300px;
+				align-content: center;
+				left: 25%;
+				position: absolute;
+				float: none;
+			}
+		}
+		@media (max-width: 400px) {
+			#sidebar{
+				margin-top: 60%;
+				max-width: 300px;
+				align-content: center;
+				left: 25%;
+				position: absolute;
+				float: none;
+			}
+		}
